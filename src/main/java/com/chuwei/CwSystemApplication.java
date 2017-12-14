@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.chuwei.entity")
+@EnableJpaRepositories(basePackages = "com.chuwei.dao.repository")
 @ComponentScan(basePackages = "com.chuwei")
 public class CwSystemApplication {
 

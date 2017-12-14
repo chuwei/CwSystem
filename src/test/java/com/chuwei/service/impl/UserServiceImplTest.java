@@ -1,7 +1,6 @@
 package com.chuwei.service.impl; 
 
-import com.chuwei.dao.BaseUser;
-import com.chuwei.service.UserService;
+import com.chuwei.entity.BaseUser;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.Before; 
@@ -23,7 +22,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
   
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class BaseUserServiceImplTest {
+public class UserServiceImplTest {
 
 @Before
 public void before() throws Exception { 
@@ -39,7 +38,7 @@ public void after() throws Exception {
 * 
 */
 @Autowired
-private UserService userService;
+private UserServiceImpl userService;
 
 @Test
 public void testFindUsers() throws Exception {

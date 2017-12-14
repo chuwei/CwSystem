@@ -1,4 +1,4 @@
-package com.chuwei.dao;
+package com.chuwei.entity;
 
 import javax.persistence.Basic;
 import javax.persistence.Column;

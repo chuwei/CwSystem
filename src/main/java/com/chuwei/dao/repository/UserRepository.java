@@ -1,8 +1,9 @@
-package com.chuwei.entity;
+package com.chuwei.dao.repository;
 
-import com.chuwei.dao.BaseUser;
+import com.chuwei.entity.BaseUser;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
@@ -14,9 +15,8 @@ import java.util.List;
  */
 public interface UserRepository extends JpaRepository<BaseUser,String> {
 
-    BaseUser findById(long id);
-    int deleteById(int id);
+    BaseUser findById(int id);
     List<BaseUser> findByUsernameContainingAllIgnoringCase(String userName, Pageable pageable);
-
     BaseUser findByMobileAllIgnoringCase(String mobile);
+
 }
